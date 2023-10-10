@@ -52,6 +52,12 @@
     <Compile Include="BaekJoon1264.Designer.cs">
       <DependentUpon>BaekJoon1264.cs</DependentUpon>
     </Compile>
+    <Compile Include="BaekJoon2083.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaekJoon2083.Designer.cs">
+      <DependentUpon>BaekJoon2083.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="BaekJoon1264.resx">
