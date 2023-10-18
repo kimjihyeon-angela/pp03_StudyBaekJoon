@@ -62,3 +62,8 @@
 - a = richtextbox의 줄수
 - b, c, d = for문을 돌면서 richtextbox 각 줄의 값
 - 조건식들을 넣어 출력
+
+## 12 백준 10768
+- a = richtextbox의 줄수
+- month, date = richtextbox에서 받아온 월, 일
+- 조건식들 넣어 출력
