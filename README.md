@@ -51,3 +51,10 @@
 - 두 사람의 점수 4개를 순서대로 입력받아 4과목의 합계를 구하여 큰 합계 출력
 - 5557과 같이 string 배열을 int 배열로 변경하여 합계 구함
 
+## 10 백준 10039
+- richtextbox를 이용하여 점수 5개 받아옴
+- for문에 활용하기 위하여 richtextbox의 line수 찾음
+  - richtextbox.Lines.Length
+- for문에서 richtextbox.Lines[i]을 이용하여 해당 줄의 수를 알 수 있음
+- 10039번에서 요구하는 조건 넣고 출력
+
