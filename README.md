@@ -58,3 +58,7 @@
 - for문에서 richtextbox.Lines[i]을 이용하여 해당 줄의 수를 알 수 있음
 - 10039번에서 요구하는 조건 넣고 출력
 
+## 11 백준 10101
+- a = richtextbox의 줄수
+- b, c, d = for문을 돌면서 richtextbox 각 줄의 값
+- 조건식들을 넣어 출력
