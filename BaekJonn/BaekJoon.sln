@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaekJoon5575", "BaekJoon557
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaekJoon5596", "BaekJoon5596\BaekJoon5596.csproj", "{957BBF59-8696-4FF2-BAA2-63A20F90BB0D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaekJoon10039", "BaekJoon10039\BaekJoon10039.csproj", "{DB9B7D00-EF00-4800-9648-91854D412852}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{957BBF59-8696-4FF2-BAA2-63A20F90BB0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{957BBF59-8696-4FF2-BAA2-63A20F90BB0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{957BBF59-8696-4FF2-BAA2-63A20F90BB0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB9B7D00-EF00-4800-9648-91854D412852}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB9B7D00-EF00-4800-9648-91854D412852}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB9B7D00-EF00-4800-9648-91854D412852}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB9B7D00-EF00-4800-9648-91854D412852}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
