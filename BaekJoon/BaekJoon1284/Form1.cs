@@ -20,35 +20,72 @@ namespace BaekJoon1284
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int count = rtbInput.Lines.Length;
-            string[] input = rtbInput.Text.Split('\n');
-            int[] inputNumbers = input
-                .Select(str => int.Parse(str))
-                .ToArray();
-            int[] result = new int[count];
+            //int count = rtbInput.Lines.Length;
+            //string[] input = rtbInput.Text.Split('\n');
+            //int[] inputNumbers = input
+            //    .Select(str => int.Parse(str))
+            //    .ToArray();
+            //int[] result = new int[count];
+
+            #region < 네번째 시도 >
+            while (true)
+            {
+                string input = rtbInput.Text;
+                int n = int.Parse(input);
+
+                if (n == 0)
+                {
+                    break;
+                }
+
+                int totalWidth = 1;
+                int tempN = n; // 입력값을 보존
+                while (tempN > 0)
+                {
+                    int digit = tempN % 10;
+                    if (digit == 0)
+                    {
+                        totalWidth += 4;
+                    }
+                    else if (digit == 1)
+                    {
+                        totalWidth += 2;
+                    }
+                    else
+                    {
+                        totalWidth += 3;
+                    }
+                    tempN /= 10;
+                }
+
+
+                //Console.WriteLine(totalWidth);
+                Debug.WriteLine(tempN);
+                rtbResult.Text = tempN.ToString();
+            }
+            #endregion
 
             #region < 세번째 시도 >
-            for (int i = 0; i < input.Length; i++)
-            {
-                int length = input[i].Length;
-                int sum = 2;
-                for (int j = 0; j < length; j++)
-                {
-                    if (length == 4)
-                    {
-                        sum += 3;
-                    }
-                    else if (length == 3)
-                    {
-                        sum += 2;
-                    }
-                    else if (length == 2)
-                    {
-                        sum += 1;
-                    }
-                    
-                }
-            }
+            //for (int i = 0; i < input.Length; i++)
+            //{
+            //    int length = input[i].Length;
+            //    int sum = 2;
+            //    for (int j = 0; j < i; j++)
+            //    {
+            //        if (length == 4)
+            //        {
+            //            sum += 3;
+            //        }
+            //        else if (length == 3)
+            //        {
+            //            sum += 2;
+            //        }
+            //        else if (length == 2)
+            //        {
+            //            sum += 1;
+            //        }
+            //    }
+            //}
 
             #endregion
 
