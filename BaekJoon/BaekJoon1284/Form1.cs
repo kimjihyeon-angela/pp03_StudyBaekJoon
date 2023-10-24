@@ -46,7 +46,6 @@ namespace BaekJoon1284
                     {
                         sum += 1;
                     }
-
                     
                 }
             }
