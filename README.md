@@ -85,3 +85,31 @@
 - 천의자리, 백의자리, 십의자리, 일의자리 숫자인 경우 공백 1추가하기 (O)
 - 양쪽 끝 공백 1추가하기 (O)
 - 해당 자리에서 숫자별로 공간 더해주기(X) -> 내일 마저 해결하기
+
+## 2750 
+#include<stdio.h>
+
+int N;
+int s[1000];
+
+int main(){
+    
+    int tmp;
+    
+    scanf("%d", &N);
+    for (int i = 0; i<N; i++)
+        scanf("%d", $S[i]);
+    
+    for(int i = 0; i < (N-1); i++)
+        for (int j = i+1; j < N; j++)
+            if (S[j] < S[i]){
+                tmp = S[i];
+                S[i] = S[j];
+                S[j] = tmp;
+            }
+    
+    for (int i = 0; i<N; i++)
+        printf("%d\n", S[i])
+    
+    return 0;
+}
