@@ -113,3 +113,45 @@ int main(){
     
     return 0;
 }
+
+## 1920
+#include<stdio.h>
+#include<algorithm>
+using namespace std;
+
+int A[100001], N, M, B[10000];
+
+int binarySearch (int a){
+    int low = 1, high = N-1, mid;
+    
+    while (low <= high){
+        mid = (low + high) / 2;
+        if (a==A[mid]) return 1;
+        else if(a < A[mid]) high = mid - 1;
+        else low = mid + 1;
+    }
+    
+    return 0;
+}
+
+int main(){
+
+    scanf("%d", &N);
+    
+    for (int i = 0; i<N; i++)
+        scanf("%d", &A[i]);
+    
+    sort(A, A+N);
+        
+    scanf("%d", &M);
+    
+    for(int i = 0; i<M; i++){
+        scanf("%d", &B[i]);
+    }
+    
+    for (int i = 0; i<M; i++){
+        printf("%d\n", binarySearch(B[i]));
+    }
+    
+    retrun 0;
+}
